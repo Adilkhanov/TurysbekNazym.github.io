@@ -101,10 +101,13 @@ input:checked[type='checkbox']:before
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
    
-    .content{
+    div.content{
         display: flex;
         align-items: center;
         justify-content: center;
+        position: absolute;
+        top: 560px;
+        left: 350px;
     }
     div.content__input-group{
         position: relative;
