@@ -3,7 +3,7 @@ class ProgressBar{
     constructor(){
         this.x = 150;
         this.y = 150;
-        this.r = 80;
+        this.r = 90;
         this.startAngle = 0;
         this.endAngle = 359.9;
     }
@@ -71,4 +71,8 @@ function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
     }else{  
         document.getElementById("arc").style.display = 'flex';
     }
+  }
+  function changeColor(val){
+    console.log(val.value);
+    document.getElementById("arc").style.stroke = val.value;
   }
