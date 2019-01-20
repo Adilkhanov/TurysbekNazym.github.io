@@ -1,0 +1,349 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    align-content: center;
+    justify-content: center;
+}
+body { 
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 35% auto;  
+    grid-column-gap: 0%;
+}
+.columnOne { 
+    display: grid;
+    grid-template-rows: 46% 25% 25%;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.columnOne__info {
+   background: #9649fc;
+   display: inline-block;
+   width: 50%;
+   height: 90%;
+   position: relative;
+   text-align: center;
+}
+.columnOne__info:before {
+    border-top: 35px solid #9649fc;
+    border-left: 110px solid transparent;
+    border-right: 113px solid transparent;
+    content: '';
+    height: 0;
+    left: 0;
+    position: absolute;
+    bottom: -35px;
+    width: 0;
+}
+
+img {   
+    background-size: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    max-width: 100%;
+    height: 70px;
+}
+
+.columnOne__skill {
+   color: black;
+   margin: 0;
+   justify-content: center;
+   align-content: center;
+   display: flex;
+   flex-direction: row
+}
+
+.columnOne__title {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+#columnOne__icon {
+   position: relative;
+   right: 10px;
+}
+
+#label{
+    border-bottom: 1px solid black;
+    width: 175px;
+}
+
+.columnOne__award-types {
+  position: relative;
+  top: 85px;
+  right: 200px;
+  font-size: 11px;
+}
+.columnOne__title {
+    display: flex;
+    flex-direction: row;
+}
+#iconLevel{
+   background: url('/images/level.png');
+   background-repeat: no-repeat;
+   height: 30px;
+   width: 150px;
+   position: relative;
+   left: 20px;
+}
+
+#iconJavaScript {
+    background: url('/images/angular.png');
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 150px;
+    position: relative;
+    left: 7px;
+}
+
+#iconAngular{
+    background: url('/images/angular.png');
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 150px;
+    position: relative;
+    left: 15px;
+ }
+
+.columnOne__ {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    align-content: center;
+}
+.columnTwo__skill-award {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+#columnOne__awards {
+    background: url('/images/medal.png');
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    position: relative;
+    left: 20px;
+}
+#label-awards {
+    border-bottom: 1px solid black;
+    width: 175px;
+    margin-left: 18px;
+    position: relative;
+    left: 10px;
+}
+
+.columnOne__award-year {
+    position: relative;
+    top: 74px;
+    right: 200px;
+    font-size: 11px;
+}
+
+#icon-phone {
+    position: relative;
+    right: 20px;  
+}
+
+#label-phone {
+    border-bottom: 1px solid black;
+    width: 250px;
+  
+}
+
+.columnTwo { 
+    display: grid;
+    grid-template-rows: 20% 40% 35%;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+.columnTwo__title {
+    display: flex;
+    flex-direction: row;
+}
+.columnTwo__contact {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#contact-detail {
+    display: flex;
+    position: relative;
+    right: 290px;
+    top: 50px;
+    font-size: 11px; 
+}
+
+#contact-detail p{
+  margin: 0;
+}
+ 
+.item-dash {
+    position: absolute;
+    left: 45px;
+}
+
+.item-example {
+    position: absolute;
+    left: 90px;
+    width: 130px;  
+}
+
+#columnTwo__exp {
+    background: url('/images/case.png');
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    position: relative;
+    top:52px;
+    right: 35px;
+    
+}
+
+#columnTwo__edu {
+    background: url('/images/edu.png');
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    position: relative;
+    top:56px;
+    right: 35px;
+    
+}
+
+#label-edu {
+    border-bottom: 1px solid black;
+    width: 250px;
+    right: 300px;
+    position: relative;
+    top:56px;
+    right: 0px;
+   
+} 
+
+#label-exp {
+    border-bottom: 1px solid black;
+    width: 250px;
+    position: relative;
+    top:52px;
+    right: 0px;
+}
+
+.columnTwo__company-name {
+    position: relative;
+    top: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.columnTwo__company-name p{
+   font-size: 11px;
+   display: inline;
+   padding-right: 30px;
+   font-weight: bold;
+}
+
+.columnTwo__job-position {
+    position: relative;
+    top: 45px;
+    font-size: 11px;
+}
+
+.columnTwo__job-desc {
+    display: flex;
+    flex-flow: wrap;
+    position: relative;
+    top: 30px;
+    width: 320px;
+    font-size: 11px;
+}
+
+.columnTwo__company-name-two {
+    position: relative;
+    top: 20px;
+    margin: 0;
+    padding: 0;
+}
+.columnTwo__company-name-two p{
+    font-size: 11px;
+    display: inline;
+    padding-right: 85px;
+    font-weight: bold;
+}
+
+.columnTwo__job-position-two {
+    position: relative;
+    top: 5px;
+    font-size: 11px;
+}
+
+.columnTwo__job-desc-two {
+    display: flex;
+    flex-flow: wrap;
+    position: relative;
+    width: 320px;
+    font-size: 11px;
+}
+@media only screen and (max-width: 1150px) {  /* tablet and phone*/
+    body{
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-column-gap:5%; 
+        font-size: 10px;
+    }
+    .columnOne__info:before {
+        border-left: 95px solid transparent;
+        border-right: 105px solid transparent;
+    } 
+    #columnOne__awards {
+        position: relative;
+        left: 0px;
+    }
+
+    #label-awards {
+        margin-left: 6px;
+        position: relative;
+        left: 0px;
+    }
+
+}
+
+@media only screen and (min-width: 1251px)and (max-width:2000px) { /* large screen*/
+
+    .columnOne__info:before {
+        border-left: 100px solid transparent;
+        border-right: 123px solid transparent;
+    } 
+}
+
+@media only screen and (min-width: 1151px) and (max-width:1250px)  {
+  
+    .columnOne__info:before {
+        border-left: 95px solid transparent;
+        border-right: 110px solid transparent;
+    } 
+
+    #columnOne__awards {
+        position: relative;
+        left: 0px;
+    }
+
+    #label-awards {
+        margin-left: 6px;
+        position: relative;
+        left: 0px;
+    }
+}
+

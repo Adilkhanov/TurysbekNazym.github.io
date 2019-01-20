@@ -1,38 +1,115 @@
 <!DOCTYPE html>
- <html lane='en'>
-   <head>
-     <meta charset="UTF-8">
-      <link rel="stylesheet" type="text/css" href="style.css">
-     <title>Progress Bar</title>
-   </head>
-   <body>
-    <div class="content">
-        <div class="content__progress-bar" id="progress-bar" >
-            <svg width="300px" height="300px">
-              <path id="arc" fill="none" stroke="rgb(163, 75, 245)" stroke-width="20" />
-            </svg>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>CV</title>
+</head>
+<body>
+    
+    <div class="columnOne">
+        <div class="columnOne__info">
+            <h3>NAZYM TURYSBEK</h3>
+            <h6>WEB DEVELOPER</h6>
+            <img src="images/ava.png">      
         </div>
-        <div class="content__input-group"> 
-           <div class="content__range">
-              <input id="angle" value="100" onInput="handleValue()"/>
-              <span>Value</span>
-           </div>
-           <div class="content__checkbox-group">
-              <div class="content__checkbox-group__element"> 
-                 <input type="checkbox" id="animation" name ="animation" onClick="animateProgressBar(this)" />
-                 <span id="title">Animate</span>
-              </div>
-              <div class="content__checkbox-group__element"> 
-                 <input type="checkbox" id="hide" name ="hide" onClick="hideProgressBar(this)" />
-                 <span id="title">Hide</span>
-              </div>   
-              <div class="content__checkbox-group__element" style="margin-left:7px">
-                <input type="color" id="head" name="head" value="#DDA0DD" onClick="changeColor(this)">
-                <span id="title"> Color Picker</span>
+
+        <div class="columnOne__skill">
+            <div class="columnOne__title"> 
+                 <i class="material-icons md-48" id ="columnOne__icon">build</i>
+                 <h4 id="label"><span>SKILLS </span> </h4> 
             </div>
-           </div>
+            <div class="columnOne__award-types">
+                 <div class="columnOne__"> 
+                    <p>Angular</p>
+                    <span id="iconAngular"></span>  
+                 </div>
+                <div class="columnOne__"> 
+                    <p>HTML5</p>
+                    <span id="iconLevel"></span>  
+                </div>
+                <div class="columnOne__"> 
+                     <p>JavaScript</p>
+                     <span id="iconJavaScript"></span>  
+                </div>
+                <div class="columnOne__"> 
+                     <p>ReactJS</p>
+                     <span id="iconLevel"></span>  
+                </div>          
+            </div>
         </div>
-      </div>  
-   </body>
-    <script src="main.js"></script>
- </html>
+        
+        <div class="columnOne__skill">
+                <div class="columnTwo__contact"> 
+                    <i id="columnOne__awards"></i>
+                    <h4 id="label-awards"><span>AWARDS</span> </h4> 
+                </div>
+                <div class="columnOne__award-types">
+                    <p> September 2017 <br> Taiburyl scholar</p> 
+                    <p>Scholarship for students with high achievement</p>        
+                </div>
+            </div>
+    </div>
+
+
+    <div class="columnTwo">
+
+         <div class="columnTwo__contact">
+             <div class="columnTwo__contact"> 
+                  <i class="material-icons md-48" id ="icon-phone">phone</i>
+                  <h4 id="label-phone"><span>CONTACT </span> </h4> 
+             </div>
+             <div class="columnTwo__contact-detail">
+                 <div id="contact-detail">
+                    <p class="item-title"><b>Phone</b></p> <p class="item-dash"> <b>&mdash;</b></p> <p class="item-example"> +7(777) 456 67 86</p>
+                 </div>
+                 <div id="contact-detail">
+                        <p class="item"><b>E-mail</b></p> <p class="item-dash"> <b>&mdash;</b></p> <p class="item-example"> nazym-zh-t@gmail.com </p>
+                 </div>
+                 <div id="contact-detail">
+                        <p class="item"><b>Website</b></p> <p class="item-dash"> <b>&mdash;</b></p> <p class="item-example">  www.edu.nazym.com</p>
+                 </div>
+                 <div id="contact-detail">
+                        <p class="item"><b>Address</b></p> <p class="item-dash"> <b>&mdash;</b></p> <p class="item-example">  Almaty city</p>
+                 </div>
+             </div>
+        </div>
+
+        <div class="columnTwo__experience">
+            <div class="columnTwo__contact"> 
+                 <i id="columnTwo__exp"></i>
+                 <h4 id="label-exp"><span>EXPERIENCE</span> </h4> 
+            </div>
+            <div class="columnTwo__company-name"><p>Dar ecosystem</p>  <p>  September 2018 to Novermber 2018</p></div>
+            <div class="columnTwo__job-position"> <p>Junior Web Developer</p></div>
+            <div class="columnTwo__job-desc">
+               <p>The main task was adding features, fixing bugs and additional tasks from the manager. Doing the 
+                 web application in Angular and being the writing code in JavaScript </p>
+            </div>
+            <div class="columnTwo__company-name-two"><p>IEIT</p>  <p> December 2018 to January 2019</p></div>
+            <div class="columnTwo__job-position-two"> <p>Junior Web Developer</p></div>
+            <div class="columnTwo__job-desc-two">
+               <p>The main task was adding features, fixing bugs and additional tasks from the manager. Doing the 
+                 web application in Angular and being the writing code in JavaScript </p>
+            </div>
+        </div> 
+
+        <div class="columnTwo__education" style="margin-top: 10px">
+            <div class="columnTwo__contact"> 
+                <i id="columnTwo__edu"></i>
+                <h4 id="label-edu"><span>EDUCATION</span> </h4> 
+            </div>
+            <div class="columnTwo__company-name"><p>KBTU</p>  <p>2015-2019</p></div>
+            <div class="columnTwo__job-position"> <p> <b>Student of Computer Science and Software</b></p></div>
+            <div class="columnTwo__job-desc">
+               <p>The main task was adding features, fixing bugs and additional tasks from the manager. Doing the 
+                 web application in Angular and being the writing code in JavaScript </p>
+            </div>
+        </div> 
+
+    </div>
+</body>
+</html>
